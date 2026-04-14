@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nepal Rescue Map (MapLibre Edition)</title>
+    <!-- MapLibre GL JS stylesheet -->
+    <link
+      href="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nepal Rescue Map (MapLibre Edition)</h1>
+    </header>
+    <div id="content">
+      <aside id="sidebar">
+        <h2>Routes</h2>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search by route or rescue point and press Enter"
+        />
+        <ul id="route-list"></ul>
+        <div id="summary"></div>
+      </aside>
+      <main id="map-container">
+        <div id="map"></div>
+      </main>
+    </div>
+    <!-- MapLibre GL JS library -->
+    <script src="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.js"></script>
+    <script src="assets/data.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
